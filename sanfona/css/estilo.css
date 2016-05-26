@@ -1,0 +1,30 @@
+.controles {
+	background: darkred;
+	height: 50px;
+} 
+.alterna {
+	background: slateblue;
+}
+.controles, .alterna {
+	width: 100%;
+	text-align: center;
+}
+
+/* SANFONA */
+
+.sanfona {
+	overflow: hidden;
+	transition: all linear 0.3s;
+}
+
+.sanfona.alterada {
+	height: 0;
+}
+
+.btn-sanfona:after {
+	content: "\25b2";
+	display: inline-block;
+}
+.btn-sanfona.alterada:after {
+	content: "\25bc";
+}
